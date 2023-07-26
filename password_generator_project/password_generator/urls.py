@@ -19,7 +19,7 @@ from django.urls import path
 from generator import views
 
 urlpatterns = [
-    path('', views.home),
-    path('select/', views.select),
+    path('', views.home, name='home'),
+    path('select/', views.select, name='select'),
     path('password/', views.password, name='password'),
 ]
